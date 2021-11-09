@@ -9,10 +9,10 @@ pipeline:
 - name: SpacyNLP
   # language model to load
   model: zh_core_web_trf
-- name: SpacyTokenizer
-- name: SpacyFeaturizer
-- name: SpacyEntityExtractor
-  dimensions: ["PERSON", "LOC", "ORG", "PRODUCT", "DATE", "TIME", "GPE"]
+- name: JiebaTokenizer
+#- name: SpacyFeaturizer
+#- name: SpacyEntityExtractor
+#  dimensions: ["PERSON", "LOC", "ORG", "PRODUCT", "DATE", "TIME", "GPE"]
 - name: CountVectorsFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: "char_wb"
