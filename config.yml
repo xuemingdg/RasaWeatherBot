@@ -17,11 +17,12 @@ pipeline:
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
-- name: SpacyEntityExtractor
-  dimensions: ["DATE", "GPE"]
 - name: DIETClassifier
   entity_recognition: false
+  constrain_similarities: true
   epochs: 100
+- name: SpacyEntityExtractor
+  dimensions: ["DATE", "GPE"]
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100

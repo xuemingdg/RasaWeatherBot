@@ -82,7 +82,7 @@ responses:
   - text: 嗯嗯，合作愉快！
   utter_ask_DATE:
   - text: 请问您要查询哪一天的天气？
-  utter_ask_address:
+  utter_ask_GPE:
   - text: 请问您要查下哪里的天气？
   utter_default:
   - text: 没听懂，请换种说法吧~
@@ -103,7 +103,7 @@ actions:
 - utter_goodbye
 - utter_thanks
 - utter_ask_DATE
-- utter_ask_address
+- utter_ask_GPE
 - weather_form
 - utter_chitchat
 - utter_noworries
