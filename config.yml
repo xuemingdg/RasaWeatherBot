@@ -10,15 +10,17 @@ pipeline:
   # language model to load
   model: zh_core_web_trf
 - name: JiebaTokenizer
+#- name: SpacyTokenizer
 #- name: SpacyFeaturizer
-#- name: SpacyEntityExtractor
-#  dimensions: ["PERSON", "LOC", "ORG", "PRODUCT", "DATE", "TIME", "GPE"]
 - name: CountVectorsFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
+- name: SpacyEntityExtractor
+  dimensions: ["DATE", "GPE"]
 - name: DIETClassifier
+  entity_recognition: false
   epochs: 100
 - name: EntitySynonymMapper
 - name: ResponseSelector

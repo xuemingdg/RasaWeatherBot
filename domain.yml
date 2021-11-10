@@ -32,15 +32,13 @@ intents:
 entities:
 - DATE
 - GPE
-- address
-- date_time
 slots:
-  date_time:
+  DATE:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true
     influence_conversation: false
-  address:
+  GPE:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true
@@ -82,7 +80,7 @@ responses:
   - text: 嗯呢。不用客气~
   - text: 这是我应该做的，主人~
   - text: 嗯嗯，合作愉快！
-  utter_ask_date_time:
+  utter_ask_DATE:
   - text: 请问您要查询哪一天的天气？
   utter_ask_address:
   - text: 请问您要查下哪里的天气？
@@ -104,7 +102,7 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_thanks
-- utter_ask_date_time
+- utter_ask_DATE
 - utter_ask_address
 - weather_form
 - utter_chitchat
@@ -115,11 +113,5 @@ actions:
 - utter_cheer_up
 forms:
   weather_form:
-    required_slots:
-      address:
-      - entity: GPE
-        type: from_entity
-      date_time:
-      - entity: DATE
-        type: from_entity
+    required_slots: {}
 e2e_actions: []

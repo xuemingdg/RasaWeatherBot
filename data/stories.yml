@@ -65,31 +65,31 @@ stories:
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - requested_slot: date_time
+    - requested_slot: DATE
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - requested_slot: address
+    - requested_slot: GPE
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 后天
+      - DATE: 后天
     - intent: request_weather
       entities:
-      - date_time: 后天
+      - DATE: 后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -101,31 +101,31 @@ stories:
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - requested_slot: date_time
+    - requested_slot: DATE
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - requested_slot: address
+    - requested_slot: GPE
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 上海
+      - GPE: 上海
     - intent: request_weather
       entities:
-      - address: 深圳
+      - GPE: 深圳
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - slot_was_set:
-    - address: 上海
+    - GPE: 上海
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -135,32 +135,32 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 明天
-    - address: 上海
+    - DATE: 明天
+    - GPE: 上海
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 上海
+    - GPE: 上海
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 广州
+      - GPE: 广州
     - intent: request_weather
       entities:
-      - address: 广州
+      - GPE: 广州
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 上海
+    - GPE: 上海
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -170,32 +170,32 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - address: 深圳
-    - date_time: 后天
+    - GPE: 深圳
+    - DATE: 后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 大后天
+      - DATE: 大后天
     - intent: request_weather
       entities:
-      - date_time: 大后天
+      - DATE: 大后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - slot_was_set:
-    - date_time: 大后天
+    - DATE: 大后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -205,50 +205,50 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 明天
-    - address: 上海
+    - DATE: 明天
+    - GPE: 上海
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 上海
+    - GPE: 上海
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 北京
+      - GPE: 北京
     - intent: request_weather
       entities:
-      - address: 北京
+      - GPE: 北京
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 上海
+    - GPE: 上海
   - slot_was_set:
-    - address: 北京
+    - GPE: 北京
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 后天
+      - DATE: 后天
     - intent: request_weather
       entities:
-      - date_time: 后天
+      - DATE: 后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 北京
+    - GPE: 北京
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -258,50 +258,50 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 后天
-    - address: 北京
+    - DATE: 后天
+    - GPE: 北京
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 北京
+    - GPE: 北京
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 深圳
+      - GPE: 深圳
     - intent: request_weather
       entities:
-      - address: 深圳
+      - GPE: 深圳
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 北京
+    - GPE: 北京
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 南京
+      - GPE: 南京
     - intent: request_weather
       entities:
-      - address: 南京
+      - GPE: 南京
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - slot_was_set:
-    - address: 南京
+    - GPE: 南京
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -311,50 +311,50 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 明天
-    - address: 长沙
+    - DATE: 明天
+    - GPE: 长沙
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 长沙
+    - GPE: 长沙
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 后天
+      - DATE: 后天
     - intent: request_weather
       entities:
-      - date_time: 后天
+      - DATE: 后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 长沙
+    - GPE: 长沙
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 大后天
+      - DATE: 大后天
     - intent: request_weather
       entities:
-      - date_time: 大后天
+      - DATE: 大后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 长沙
+    - GPE: 长沙
   - slot_was_set:
-    - date_time: 大后天
+    - DATE: 大后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -364,50 +364,50 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 后天
-    - address: 深圳
+    - DATE: 后天
+    - GPE: 深圳
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 明天
+      - DATE: 明天
     - intent: request_weather
       entities:
-      - date_time: 明天
+      - DATE: 明天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - address: 广州
+      - GPE: 广州
     - intent: request_weather
       entities:
-      - address: 广州
+      - GPE: 广州
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 深圳
+    - GPE: 深圳
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -418,33 +418,33 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 明天
+    - DATE: 明天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - requested_slot: address
+    - requested_slot: GPE
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 后天
+      - DATE: 后天
     - intent: request_weather
       entities:
-      - date_time: 后天
+      - DATE: 后天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -455,33 +455,33 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - address: 广州
+    - GPE: 广州
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - slot_was_set:
-    - requested_slot: date_time
+    - requested_slot: DATE
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   - or:
     - intent: inform
       entities:
-      - date_time: 明天
+      - DATE: 明天
     - intent: request_weather
       entities:
-      - date_time: 明天
+      - DATE: 明天
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 后天
+    - DATE: 后天
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - slot_was_set:
-    - date_time: 明天
+    - DATE: 明天
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -492,14 +492,14 @@ stories:
   steps:
   - intent: request_weather
     entities:
-    - date_time: 今天
-    - address: 广州
+    - DATE: 今天
+    - GPE: 广州
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - date_time: 今天
+    - DATE: 今天
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -512,13 +512,13 @@ stories:
   - action: weather_form
   - active_loop: weather_form
   - slot_was_set:
-    - requested_slot: date_time
+    - requested_slot: DATE
   - slot_was_set:
-    - date_time: 今天
+    - DATE: 今天
   - slot_was_set:
-    - requested_slot: address
+    - requested_slot: GPE
   - slot_was_set:
-    - address: 广州
+    - GPE: 广州
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
